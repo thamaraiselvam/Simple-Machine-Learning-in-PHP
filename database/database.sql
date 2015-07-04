@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 04, 2015 at 08:55 AM
+-- Generation Time: Jul 04, 2015 at 09:19 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `keywords` (
   `keywords` text NOT NULL,
   `type` text NOT NULL,
   `points` int(1) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=508 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=512 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `keywords`
@@ -121,15 +121,15 @@ INSERT INTO `keywords` (`id`, `keywords`, `type`, `points`) VALUES
 (81, 'seedling', 'fruit', 10),
 (82, 'seed', 'fruit', 10),
 (83, 'garden', 'fruit', 10),
-(84, 'apple', 'fruit', 7),
-(86, 'apples', 'fruit', 11),
+(84, 'apple', 'fruit', 2),
+(86, 'apples', 'fruit', 10),
 (87, 'are', 'fruit', 6),
 (88, 'very', 'fruit', 5),
-(89, 'i', 'company', 6),
+(89, 'i', 'company', 2),
 (90, 'a', 'company', 6),
 (91, 'new', 'company', 9),
 (92, 'loves', 'fruit', 9),
-(93, 'love', 'company', 5),
+(93, 'love', 'company', 2),
 (94, 'near', 'fruit', 6),
 (95, 'with', 'fruit', 9),
 (96, 'his', 'fruit', 8),
@@ -149,7 +149,7 @@ INSERT INTO `keywords` (`id`, `keywords`, `type`, `points`) VALUES
 (110, 'said', 'fruit', 6),
 (111, 'by', 'fruit', 5),
 (112, 'researchers', 'fruit', 5),
-(113, '', 'fruit', 7),
+(113, '', 'fruit', 8),
 (115, 'on', 'fruit', 5),
 (116, 'so', 'fruit', 5),
 (117, 'air', 'company', 5),
@@ -166,8 +166,8 @@ INSERT INTO `keywords` (`id`, `keywords`, `type`, `points`) VALUES
 (128, 'color', 'fruit', 3),
 (129, 'owner', 'company', 4),
 (130, 'phone', 'company', 2),
-(131, 'apple', 'company', 6),
-(132, 'and', 'company', 6),
+(131, 'apple', 'company', 3),
+(132, 'and', 'company', 9),
 (133, 'too', 'company', 2),
 (134, 'many', 'company', 2),
 (135, 'picture', 'fruit', 2),
@@ -175,7 +175,7 @@ INSERT INTO `keywords` (`id`, `keywords`, `type`, `points`) VALUES
 (137, 'in', 'fruit', 11),
 (138, 'makes', 'company', 2),
 (139, 'iphones', 'company', 2),
-(140, 'apple,', 'company', 3),
+(140, 'apple,', 'company', 1),
 (141, 'designs,', 'company', 2),
 (142, 'manufactures,', 'company', 2),
 (143, 'markets', 'company', 2),
@@ -184,7 +184,7 @@ INSERT INTO `keywords` (`id`, `keywords`, `type`, `points`) VALUES
 (146, 'media', 'company', 2),
 (147, 'devices,', 'company', 2),
 (148, 'personal', 'company', 2),
-(149, 'computers,', 'company', 2),
+(149, 'computers,', 'company', 3),
 (150, 'portable', 'company', 2),
 (151, 'digital', 'company', 3),
 (152, 'players,', 'company', 2),
@@ -203,8 +203,8 @@ INSERT INTO `keywords` (`id`, `keywords`, `type`, `points`) VALUES
 (165, 'its', 'company', 2),
 (166, 'services', 'company', 2),
 (167, 'include', 'company', 3),
-(168, 'iphone,', 'company', 3),
-(169, 'ipad,', 'company', 2),
+(168, 'iphone,', 'company', 4),
+(169, 'ipad,', 'company', 3),
 (170, 'ipod,', 'company', 3),
 (171, 'mac,', 'company', 2),
 (172, 'tv,', 'company', 2),
@@ -212,7 +212,7 @@ INSERT INTO `keywords` (`id`, `keywords`, `type`, `points`) VALUES
 (174, 'consumer', 'company', 2),
 (175, 'professional', 'company', 2),
 (176, 'applications,', 'company', 2),
-(177, 'the', 'company', 2),
+(177, 'the', 'company', 4),
 (178, 'x', 'company', 2),
 (179, 'operating', 'company', 2),
 (180, 'systems,', 'company', 2),
@@ -542,7 +542,11 @@ INSERT INTO `keywords` (`id`, `keywords`, `type`, `points`) VALUES
 (504, 'magic', 'fruit', 2),
 (505, 'keep', 'fruit', 2),
 (506, 'youthful', 'fruit', 2),
-(507, 'eternally', 'fruit', 2);
+(507, 'eternally', 'fruit', 2),
+(508, 'creates', 'company', 2),
+(509, '8,', 'company', 2),
+(510, 'x,', 'company', 2),
+(511, 'itunes,', 'company', 2);
 
 --
 -- Indexes for dumped tables
@@ -562,7 +566,7 @@ ALTER TABLE `keywords`
 -- AUTO_INCREMENT for table `keywords`
 --
 ALTER TABLE `keywords`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=508;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=512;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -62,9 +62,10 @@ if (isset($input) && $result) {
 												$sql = "UPDATE keywords SET points='$points' WHERE keywords='" . $word . "' AND type = '" . $tempResult . "'";
 												$con->query($sql);
 										}
-										$sql = "UPDATE keywords SET points='$pointsDuplicate' WHERE keywords='" . $word . "' AND type = '" . $result . "'";
-										$con->query($sql);
-										
+										if ($pointsDuplicate < 10) {
+											$sql = "UPDATE keywords SET points='$pointsDuplicate' WHERE keywords='" . $word . "' AND type = '" . $result . "'";
+											$con->query($sql);
+										}
 								} else { //if answer is right increasing points for keywords
 										$pointsDuplicate = $points;
 										$points          = $points + 1;

@@ -1,4 +1,7 @@
+<?php
 
+require 'connection.php'
+?>
 <link rel="stylesheet" href="style/css/bootstrap.min.css">
 
 <!-- Optional theme -->
@@ -10,11 +13,7 @@
 <?php
 
 
-$con = mysqli_connect("localhost", "root", "", "machine");
 
-if (mysqli_connect_errno()) {
-		echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
 
 if (isset($_POST['input'])) {
 		$input = $_POST['input'];

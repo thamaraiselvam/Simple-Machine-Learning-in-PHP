@@ -1,4 +1,8 @@
+<?php
 
+
+require'connection.php'
+?>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="style/css/bootstrap.min.css">
@@ -50,11 +54,7 @@ if (isset($_POST['submit'])) {
 }
 
 
-$con = mysqli_connect("localhost", "root", "", "machine");
 
-if (mysqli_connect_errno()) {
-		echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
 $companyPoints = 0;
 $applePoints   = 0;
 $neutralPoints = 0;

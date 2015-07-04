@@ -45,20 +45,17 @@ if (isset($input) && $result) {
 $points=0;
 $select="SELECT * FROM keywords WHERE keywords='".$word."'";
 $checking=mysqli_query($con,$select);
-// echo "<pre>";
-// print_r($checking);
-// echo "</pre>";
-// echo $checking->num_rows;
+
 	if(!empty($checking))
 	if (!$checking->num_rows) {
 		$sql="INSERT INTO keywords VALUES(NULL,'$word', '$result','2')";
 		$con->query($sql);
-		// echo "Inserted new data $word";
+		
 	}
 	else {
 		foreach ($checking as $key => $value) {
 			$points=$value['points'];
-			//echo $points;
+		
 		}	
 		
 		if(isset($changed)){
@@ -71,7 +68,7 @@ $checking=mysqli_query($con,$select);
 			}
 			$sql = "UPDATE keywords SET points='$pointsDuplicate' WHERE keywords='".$word."' AND type = '".$result."'";
 			$con->query($sql);
-			//echo "Updated $word";
+			
 		}
 		else {
 			$pointsDuplicate=$points;
@@ -81,7 +78,7 @@ $checking=mysqli_query($con,$select);
 			
 				$sql = "UPDATE keywords SET points='$points' WHERE keywords='".$word."' AND type = '".$result."'";
 					$con->query($sql);
-			//echo "Updated $word";
+		
 		}
 				
 		}
